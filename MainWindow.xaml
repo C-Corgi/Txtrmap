@@ -1,0 +1,28 @@
+﻿<Window x:Class="Txtrmap.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Txtrmap"
+        xmlns:menuControl="clr-namespace:Txtrmap.View.UserControls"
+        mc:Ignorable="d"
+        Title="Txtrmap" Height="450" Width="800" Background="#FF3E3E3E">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="56*"/>
+            <ColumnDefinition Width="745*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"/>
+            <RowDefinition/>
+            <RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+        <menuControl:MenuBar d:IsHidden="True" Grid.ColumnSpan="2"/>
+        <Image x:Name="texture" Margin="0,30,0,1" Grid.RowSpan="3" Grid.ColumnSpan="2"/>
+        <Label Name="IsTXTRCmpressed" Margin="30,0,0,1" Content="Is Txtr Compressed" Grid.ColumnSpan="2"/>
+        <Label Name="Dimensions" Margin="200,0,0,1" Content="Size" Grid.ColumnSpan="2"/>
+        <Label Name="FileName" Margin="400,0,0,1" Content="FileName" Grid.ColumnSpan="2"/>
+    </Grid>
+
+
+</Window>
