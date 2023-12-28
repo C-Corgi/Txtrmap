@@ -15,7 +15,7 @@
             <Menu>
                 <MenuItem Header="File">
                     <MenuItem Header="Open File" Click="btnOpen"/>
-                    <MenuItem Header="save File" Click="btnSave"/>
+                    <MenuItem Header="Save File" Click="btnSave"/>
                     <MenuItem Header="Exit" Click="btnExit"/>
                 </MenuItem>
             </Menu>
